@@ -18,7 +18,9 @@
         
         --white:#FFFFFF ;
         --black: #0A0A0A ;
-
+        --grey: #6d6d6d;
+        --dark_grey: #282828;
+        --green_fluo: #adff2f;
     }
 
 
@@ -26,44 +28,429 @@
     GENERAL
 */
 
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+a:hover {
+    color: var(--white);
+}
+
+ul {
+    list-style: none;
+}
+
+h4 {
+    color: var(--white);
+    text-transform: uppercase;
+    padding-bottom: .3125rem;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+}
 
 /* 
     MAIN
 */
 
+    /* Sidebar Section Start */
 
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        width: 9.375rem;
+        height: calc(100vh - 4.375rem);
+        padding: .9375rem .9375rem 0 .9375rem;
+        font-size: .75rem;
+        background-color: var(--black);
+        color: var(--grey);
+    }
+
+    .logo img:first-child {
+        padding-bottom: .3125rem;
+    }
+
+    .logo img:last-child {
+        display: none;
+    }
+
+    .sidebar .fas {
+        vertical-align: middle;
+        width: 1.25rem;
+        margin: .3125rem .625rem .3125rem 0;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+
+    .sidebar .fas:last-child {
+        font-size: 1.875rem;
+        margin-right: .9375rem;
+    }
+
+    .sidebar .far {
+        margin-right: .625rem;
+    }
+
+    .playlist div {
+        line-height: 1.5625rem;
+    }
+
+    .scrollbar_container {
+        flex-grow: 1;
+        min-height: 4.6875rem;
+        overflow-y: auto;
+    }
+
+    .scrollbar_container ul li {
+        line-height: 1.5625rem;
+    }
+
+    .sidebar .profile_container > * {
+        display: inline-block;
+        margin: .3125rem 0;
+    }
+
+    .menu div:first-child a i,
+    .menu div:first-child a span {
+        color: white;
+    }
+
+    .green_border {
+        width: 9.375rem;
+        margin-left: -.9375rem;
+        padding-left: .625rem;
+        border-left: .25rem solid var(--green_fluo);
+    }
+
+    .profile_container a:first-child {
+        margin-right: .3125rem;
+    }
+
+    .profile_container img {
+        vertical-align: middle;
+        height: 1.5625rem;
+        border-radius: 50%;
+        background-color: var(--grey);
+    }
+
+    /* Sidebar Section End */
+
+    /* Navbar Section Start  */
+
+    /* Navbar Section End */
+
+    /* 1st Album Row Section Start */
+
+    /* 1st Album Row Section End */
+
+    /* 2nd Album Row Section Start */
+
+    /* 2nd Album Row Section End */
+
+    /* 3rd Album Row Section Start */
+
+    /* 3rd Album Row Section End */
 
 /* 
     FOOTER
 */
 
+/* General Footer Rules */
 
+footer {
+    display: flex;
+    height: 4.375rem;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    background-color: var(--dark_grey);
+}
 
-/* 
-    DEBUG
-*/
+footer h4 {
+    text-transform: none;
+}
 
+.left,
+.right {
+    width: 20%;
+}
 
+/* Left Footer Section Start */
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.left .far {
+    margin: 0 .625rem;
+}
+
+.song_info_container {
+    margin-right: 1.5625rem;
+}
+
+.song_info_container h4,
+.song_info_container a {
+    padding-left: .625rem;
+}
+
+.left img {
+    width: 3.125rem;
+    vertical-align: middle;
+    margin-left: .625rem;
+}
+
+.left .song_info_container a {
+    font-size: .75rem;
+}
+
+.left a:hover {
+    text-decoration: underline;
+}
+
+/* Left Footer Section End */
+
+/* Center Footer Section Start */
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: center;
+    color: var(--white);
+}
+
+.center i {
+    margin: 0 .3125rem;
+    font-size: .75rem;
+    vertical-align: middle;
+}
+
+.center a {
+    color: var(--white);
+}
+
+.center .far {
+    margin: 0 .3125rem;
+    font-size: 1.25rem;
+}
+
+.center .fa-play-circle:hover {
+    font-size: 1.875rem;
+}
+
+input[type="range"]:first-of-type {
+    width: 50%;
+    margin: 0 .625rem;
+    vertical-align: middle;
+}
+
+.center span {
+    font-size: .625rem;
+}
+
+/* Center Footer Section End */
+
+/* Right Footer Section Start */
+
+.right {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    line-height: 4.375rem;
+}
+
+.right i {
+    margin: 0 .3125rem;
+    color: var(--grey);
+}
+
+#volume {
+    width: 60%;
+    vertical-align: middle;
+}
+
+/* Right Footer Section End */
 
 /* 
     MEDIA QUERYS
 */
 
  
-/* Tablet */
+/* Laptop */
 
 @media screen and (max-width: 1100px) {
+
+    /* Navbar Section Start  */
+
+    /* Navbar Section End */
+
+    /* 1st Album Row Section Start */
+
+    /* 1st Album Row Section End */
+
+    /* 2nd Album Row Section Start */
+
+    /* 2nd Album Row Section End */
+
+    /* 3rd Album Row Section Start */
+
+    /* 3rd Album Row Section End */
+
+    /* Left Footer Section Start */
+
+    .song_info_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* Left Footer Section End */
     
 }
 
-/* Smartphone */
+/* Tablet */
 
 @media screen and (max-width: 700px) {
 
+    /* Navbar Section Start  */
+
+    /* Navbar Section End */
+
+    /* 1st Album Row Section Start */
+
+    /* 1st Album Row Section End */
+
+    /* 2nd Album Row Section Start */
+
+    /* 2nd Album Row Section End */
+
+    /* 3rd Album Row Section Start */
+
+    /* 3rd Album Row Section End */
+
+    /* Left Footer Section Start */
+
+    .left img {
+        margin: .3125rem
+    }
+
+    .song_info_container h4,
+    .song_info_container a {
+        font-size: .625rem;
+    }
+
+    /* Left Footer Section End */
+
+    /* Right Footer Section Start */
+
+    .right{
+        font-size: 12px;
+    }
+
+    /* Right Footer Section End */
+
 }
    
-/* Smartphone Small */
+/* Smartphone */
 
 @media screen and (max-width: 600px) {
+
+    /* Sidebar Section Start */
+
+    .sidebar {
+        width: 3.125rem;
+    }
+
+    .logo img:first-child {
+        display: none;
+    }
+
+    .logo img:last-child {
+        display: block;
+    }
+
+    .menu div:first-child {
+        margin-top: .625rem;
+        margin-bottom: .625rem;
+      }
+      
+      .menu div:nth-child(2) {
+        margin-bottom: .625rem;
+      }
+
+    .playlist,
+    .sidebar span,
+    .scrollbar_container ul li {
+        display: none;
+    }
+
+    .sidebar .profile_container i {
+        margin: .625rem 25%;
+    }
+
+    .sidebar img {
+        height: 1.25rem;
+    }
+
+    .profile_container span[style="color: var(--white);"] {
+        display: none;
+    }
+
+    /* Sidebar Section End */
+
+    /* Navbar Section Start  */
+
+    /* Navbar Section End */
+
+    /* 1st Album Row Section Start */
+
+    /* 1st Album Row Section End */
+
+    /* 2nd Album Row Section Start */
+
+    /* 2nd Album Row Section End */
+
+    /* 3rd Album Row Section Start */
+
+    /* 3rd Album Row Section End */
+
+    /* General Footer Rules */
+
+    .left,
+    .right {
+        width: 30%;
+    }
+
+    /* Left Footer Section Start */
+
+    .song_info_container {
+        margin-right: 0;
+    }
+
+    .song_info_container img {
+        width: 2.1875rem;
+        margin: auto .3125rem;
+    }
+
+    .left .icons .far:first-child {
+        margin-bottom: .3125rem;
+    }
+
+    /* Left Footer Section End */
 
 }
