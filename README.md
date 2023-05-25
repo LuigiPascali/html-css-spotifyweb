@@ -1,58 +1,13 @@
 # htmlcss-template
 
-FONT:
-<!-- Montserrat: Pulito e leggibile:
-
-HTML: <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-CSS:  font-family: 'Montserrat', sans-serif; 
-
-Lato: Pulito e leggibile - Testi brevi o paragrafi:
-
-HTML: <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
-CSS: font-family: 'Lato', sans-serif;
-
-Raleway: Elegante e leggero - Titoli e testi grandi dimensioni: 
-
-HTML:  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-CSS: font-family: 'Raleway', sans-serif;
-
-Open Sans: 
-
-HTML: <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-
-CSS: font-family: 'Open Sans', sans-serif;
-
-Roboto: 
-
-HTML: <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-CSS: font-family: 'Roboto', sans-serif;
-
-Poppins: Linee Arrotondate - Testi e piccoli paragrafi:
-
-HTML: <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-CSS: font-family: 'Poppins', sans-serif;
-
-Playfair Display: Tocco di classe:
-
-HTML: <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-CSS: font-family: 'Playfair Display', serif;  -->
+Eccoci arrivati a Spotify Web, la nostra prima web app!
+Il layout di questo esercizio è diverso da quelli che abbiamo riprodotto fino ad ora: il contenuto della pagina non potrà mai uscire dalla viewport, proprio come una app!
+In allegato troverete le screenshot per vedere il layout anche nelle versioni responsive, inoltre troverete dei video per quel che riguarda il comportamento hover, responsive e chiusura del browser in altezza.
+Consigli
+1. Questo esercizio si svolgerà in più giorni quindi come sempre pensate prima a far funzionare le macroaree, se quelle funzionano allora passate al dettaglio.
+2. Potete utilizzare le regole che abbiamo visto fin ad ora. Ok, ma come fate a scegliere la soluzione giusta? A volte vi sembrerà subito evidente, altre volte potreste complicarvi la vita. Se vedete che una strada non vi sta portando nel posto giusto... potete cambiarla!
+Breakpoint
+Mobile piccolo: fino a 600px
+Mobile normale: fino a 700px
+Tablet: fino a 1100px
+Desktop: fino all'infinito
