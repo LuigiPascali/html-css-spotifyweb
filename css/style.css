@@ -1,0 +1,74 @@
+/* 
+    RESET
+*/
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+
+/* 
+    COLOR PALETTE
+*/
+    :root {
+        
+        --white:#FFFFFF ;
+        --black: #0A0A0A ;
+
+    }
+
+
+/* 
+    GENERAL
+*/
+
+
+
+/* 
+    HEADER
+*/
+
+
+
+/* 
+    MAIN
+*/
+
+
+
+/* 
+    FOOTER
+*/
+
+
+
+/* 
+    DEBUG
+*/
+
+
+
+/* 
+    MEDIA QUERYS
+*/
+
+/* Smartphone Small */
+
+@media screen and (min-width: 576px) {
+    
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+    
+}
+
+/* Dekstop */
+
+@media screen and (min-width: 992px) {
+    
+}
