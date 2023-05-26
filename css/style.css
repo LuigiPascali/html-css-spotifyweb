@@ -16,10 +16,11 @@
 */
     :root {
         
-        --white:#FFFFFF ;
-        --black: #0A0A0A ;
+        --white:#FFFFFF;
+        --black: #0A0A0A;
         --grey: #6d6d6d;
         --dark_grey: #282828;
+        --very_dark_grey: #141922;
         --green_fluo: #adff2f;
     }
 
@@ -50,6 +51,11 @@ h4 {
     color: var(--white);
     text-transform: uppercase;
     padding-bottom: .3125rem;
+}
+
+h6 {
+    font-size: 1rem;
+    color: var(--white);
 }
 
 .container {
@@ -120,7 +126,7 @@ h4 {
 
     .menu div:first-child a i,
     .menu div:first-child a span {
-        color: white;
+        color: var(--white);
     }
 
     .green_border {
@@ -143,21 +149,119 @@ h4 {
 
     /* Sidebar Section End */
 
+    .main_page {
+        width: calc(100% - 9.375rem);
+        height: calc(100vh - 4.375rem);
+        position: absolute;
+        right: 0;
+        top: 0;
+        flex-grow: 1;
+        overflow-y: scroll;
+        background-color: var(--very_dark_grey);
+    }
+
     /* Navbar Section Start  */
+ 
+    .main_page_button {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: calc(100vw - 9.375rem);
+        height: 4.375rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 999;
+        background-color: rgba(8, 11, 18, 0.5);
+    }
+
+    .main_page_button > div {
+        margin-right: 1.25rem;
+        padding: .625rem 1.25rem;
+        border: .0625rem solid var(--white);
+        border-radius: 1.25rem;
+        background-color: rgb(8, 11, 18);
+        color: var(--white);
+        font-size: .875rem;
+        text-transform: uppercase;
+    }
+
+    .main_page_button div a {
+        color: var(--white);
+    }
+
+    .main_page_button >div:hover{
+        font-size: 1.125rem;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        margin-top: 4.375rem;
+        color: var(--grey);
+        text-transform: uppercase;
+    }
+
+    .navbar a {
+        margin: 0 .9375rem;
+        font-size: .75rem;
+        line-height: 3.125rem;
+    }
 
     /* Navbar Section End */
 
-    /* 1st Album Row Section Start */
+    /* Album Row Section Start */
 
-    /* 1st Album Row Section End */
+    .album_container {
+        margin: 0 .9375rem 3.125rem .9375rem;
+        padding: 1.875rem 0;
+    }
 
-    /* 2nd Album Row Section Start */
+    .album_container > h2,
+    .album_container > p {
+        margin-bottom: .9375rem;
+        margin-left: .3125rem;
+    }
 
-    /* 2nd Album Row Section End */
+    .album_container > h2 {
+        color: var(--white);
+    }
 
-    /* 3rd Album Row Section Start */
+    .album_container > p {
+        color: var(--grey);
+    }
 
-    /* 3rd Album Row Section End */
+    .album_row {
+        display: flex;
+        text-align: center;
+    }
+
+
+    .album_row .album p {
+        font-size: .875rem;
+        color: var(--grey);
+    }
+
+    .album {
+        width: calc(100% / 6);
+        margin: 0 .625rem;
+        color: var(--white);
+    }
+
+    .album img {
+        max-width: 100%;
+        min-width: 6.25rem;
+        flex-grow: 1;
+        object-fit: cover;
+    }
+
+    .round_img {
+        border-radius: 50%;
+    }
+
+
+
+    /* Album Row Section End */
 
 /* 
     FOOTER
@@ -297,19 +401,25 @@ input[type="range"]:first-of-type {
 
     /* Navbar Section Start  */
 
+    .navbar {
+        flex-wrap: wrap;
+    }
+
     /* Navbar Section End */
 
-    /* 1st Album Row Section Start */
+    /* Album Row Section Start */
 
-    /* 1st Album Row Section End */
+    .album_row {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
 
-    /* 2nd Album Row Section Start */
+    .album {
+        width: calc(25% - 1.25rem);
+        margin: 0 .9375rem .9375rem 0;
+    }
 
-    /* 2nd Album Row Section End */
-
-    /* 3rd Album Row Section Start */
-
-    /* 3rd Album Row Section End */
+    /* Album Row Section End */
 
     /* Left Footer Section Start */
 
@@ -327,21 +437,14 @@ input[type="range"]:first-of-type {
 
 @media screen and (max-width: 700px) {
 
-    /* Navbar Section Start  */
+    /* Album Row Section Start */
 
-    /* Navbar Section End */
+    .album{
+        width: calc(50% - 15px);
+        margin: 0 5px 15px 5px;
+    }
 
-    /* 1st Album Row Section Start */
-
-    /* 1st Album Row Section End */
-
-    /* 2nd Album Row Section Start */
-
-    /* 2nd Album Row Section End */
-
-    /* 3rd Album Row Section Start */
-
-    /* 3rd Album Row Section End */
+    /* Album Row Section End */
 
     /* Left Footer Section Start */
 
@@ -413,21 +516,14 @@ input[type="range"]:first-of-type {
 
     /* Sidebar Section End */
 
-    /* Navbar Section Start  */
+    .main_page {
+        width: calc(100% - 50px);
+    }
 
-    /* Navbar Section End */
+    .main_page_button {
+        width: calc(100% - 50px);
+    }
 
-    /* 1st Album Row Section Start */
-
-    /* 1st Album Row Section End */
-
-    /* 2nd Album Row Section Start */
-
-    /* 2nd Album Row Section End */
-
-    /* 3rd Album Row Section Start */
-
-    /* 3rd Album Row Section End */
 
     /* General Footer Rules */
 
